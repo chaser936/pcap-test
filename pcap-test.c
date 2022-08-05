@@ -61,13 +61,6 @@ int main(int argc, char* argv[]) {
 		if((ntohs(ether->ether_type) == ETHERTYPE_IP) && (ip->ip_p == TCP_NUM))
 		{
 
-			src_ip = inet_ntoa(ip->ip_src);
-			printf("===== IP Information =====\n");
-			printf("IP SRC ===> %s\n",src_ip);
-
-			dst_ip = inet_ntoa(ip->ip_dst);
-			printf("IP DST ===> %s\n",dst_ip);
-
 
 			printf("====== Ethernet Information =====\n");
 		
